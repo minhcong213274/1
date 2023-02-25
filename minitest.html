@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mini test</title>
+</head>
+<body>
+<input type="number" id="so1"><input type="number" id="so2">
+<button onclick="add()"  type="button">+</button>
+<button onclick="subtract()" type="button">-</button>
+<button onclick="multiply()" type="button">*</button>
+<button onclick="division()" type="button">/</button>
+<p id="result">result</p>
+<script>
+    function add() {
+    var giatri1=parseFloat(document.getElementById("so1").value);
+    var giatri2=parseFloat(document.getElementById("so2").value);
+    var result = giatri1+giatri2;
+    document.getElementById("result").innerHTML = result;
+}
+function subtract(){
+    var giatri1=parseFloat(document.getElementById("so1").value);
+    var giatri2=parseFloat(document.getElementById("so2").value);
+    var result = giatri1 - giatri2;
+    document.getElementById("result").innerHTML = result;
+}
+function multiply(){
+    var giatri1=parseFloat(document.getElementById("so1").value);
+    var giatri2=parseFloat(document.getElementById("so2").value);
+    var result = giatri1*giatri2;
+    document.getElementById("result").innerHTML = result;
+}
+function division(){
+    var giatri1=parseFloat(document.getElementById("so1").value);
+    var giatri2=parseFloat(document.getElementById("so2").value);
+    var result = giatri1/giatri2;
+    document.getElementById("result").innerHTML=result;
+}
+</script>
+</body>
+</html>

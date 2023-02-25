@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>minitest2</title>
+</head>
+<body>
+<input id="number" type="number" value="0">
+<button onclick="up()" type="button">Up</button>
+<button onclick="down()" type="button">Down</button>
+<script>
+    function up(){
+        var a=parseInt(document.getElementById("number").value);
+        document.getElementById("number").value= a+2;
+    }
+    function down() {
+        var b=parseInt(document.getElementById("number").value);
+        document.getElementById("number").value=b-2;
+    }
+</script>
+</body>
+</html>
